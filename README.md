@@ -9,13 +9,21 @@ Then, on root: ```update-grub```
 ## Install all common packages
 
 ### To search for packages: 
-```apt-cache search xml```
+```apt-cache search xml``` to search for all packages containing ```xml```
 
 ### Common packages
 ```
 sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install terminator
-sudo apt-cache search inconsolata
+sudo apt-get install fonts-inconsolata
 
 ```
+### Configure git account settings
+
+### Install & configure zsh
+
+### Other downloads
+
+- Opera
+- Chrome

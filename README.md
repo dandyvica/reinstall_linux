@@ -32,3 +32,9 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 - Opera
 - Chrome
+
+## Configure settings
+### Configure vim
+- copy ```vimrc``` to ```$HOME/.vimrc```
+- start ```vim``` and type ```PluginInstall```
+- restart ```vim```

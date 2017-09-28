@@ -22,6 +22,11 @@ sudo apt-get install fonts-inconsolata
 ### Configure git account settings
 
 ### Install & configure zsh
+```
+sudo apt-get install zsh
+chsh -s $(which zsh)
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
 
 ### Other downloads
 

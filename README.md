@@ -25,6 +25,16 @@ sudo apt-get install docky
 sudo apt-get install build-essential
 ```
 
+### XML environment
+```
+sudo apt-get install xsltproc
+```
+
+### Latex environment
+```
+sudo apt-get install xsltproc
+```
+
 ### Configure git account settings
 
 ### Install & configure zsh

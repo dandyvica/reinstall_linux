@@ -17,8 +17,14 @@ sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install terminator
 sudo apt-get install fonts-inconsolata
-
+sudo apt-get install docky
 ```
+
+### Devlopment environment
+```
+sudo apt-get install build-essential
+```
+
 ### Configure git account settings
 
 ### Install & configure zsh
@@ -32,6 +38,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 - Opera
 - Chrome
+- VSCode
 
 ## Configure settings
 ### Configure vim

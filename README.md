@@ -53,6 +53,6 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ## Configure settings
 ### Configure vim
 - install ```vundle```
-- copy ```vimrc``` to ```$HOME/.vimrc```
+- ```wget https://raw.githubusercontent.com/dandyvica/dotfiles.git/vimrc $HOME/.vimrc```
 - start ```vim``` and type ```:PluginInstall```
 - restart ```vim```

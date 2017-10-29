@@ -1,4 +1,4 @@
-# Steps after Linx Mint install
+# Steps after Linux Mint install
 
 ## Modify GRUB entries
 
@@ -46,7 +46,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 ### Other downloads
 
-- Opera
+- Opera (install first libcurl3: ```sudo apt-get install libcurl3```)
 - Chrome
 - VSCode
 

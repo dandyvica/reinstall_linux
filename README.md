@@ -30,11 +30,12 @@ sudo apt-get install hexedit
 ### XML environment
 ```
 sudo apt-get install xsltproc
+sudo apt-get install libxml2-utils
 ```
 
 ### Latex environment
 ```
-todo
+sudo apt-get install texlive-full
 ```
 
 ### Screen brightness control
@@ -68,3 +69,8 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ### Customize desktop
 
 - install ```numix``` icons
+
+### Misc
+```
+sudo apt-get install tree
+```

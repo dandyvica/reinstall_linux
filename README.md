@@ -35,6 +35,11 @@ sudo apt-get install libxml2-utils
 
 ### Latex environment
 ```
+sudo apt-get install adb fastboot
+```
+
+### Android adb/fastboot
+```
 sudo apt-get install texlive-full
 ```
 

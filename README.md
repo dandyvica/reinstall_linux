@@ -1,10 +1,12 @@
-# Linux Mint post-install
+# Linux Mint Cinnamon edition post-install
 
 ## Modify GRUB entries if black screen on boot
 
 Edit ```/etc/default/grub``` file and modify GFX entry like this: ```GRUB_GFXMODE=640x480```
 
 Then, on root: ```update-grub```
+
+No more necessary on Mint 19.0
 
 ## Install all common packages
 
@@ -33,7 +35,7 @@ sudo apt-get install xsltproc
 sudo apt-get install libxml2-utils
 ```
 
-### Latex environment
+### Android environment
 ```
 sudo apt-get install adb fastboot
 ```
@@ -79,3 +81,12 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ```
 sudo apt-get install tree
 ```
+
+# Ubuntu Gnome edition post-install
+
+## Eye-candy
+```
+sudo apt-get install gnome-tweak-tool 
+sudo apt-get install gnome-shell-extensions
+```
+

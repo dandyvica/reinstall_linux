@@ -1,6 +1,6 @@
-# Linux Mint Cinnamon edition post-install
+# Linux Mint Cinnamon/Ubuntu Gnome edition post-install
 
-## Modify GRUB entries if black screen on boot (might not be necessary in >19.0)
+## Modify GRUB entries if black screen on boot (might not be necessary anymore)
 
 Edit ```/etc/default/grub``` file and modify GFX entry like this: ```GRUB_GFXMODE=640x480```
 
@@ -39,7 +39,8 @@ mkdir ~/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # install personal .vim settings
-wget https://raw.githubusercontent.com/dandyvica/reinstall_linux.git/vimrc ~/.vimrc
+wget https://raw.githubusercontent.com/dandyvica/reinstall_linux/master/vimrc -O ~/.vimrc
+
 ```
 and start ```vim``` and type ```:PluginInstall```
 
@@ -64,7 +65,7 @@ sudo apt-get install libxml2-utils
 sudo apt-get install adb fastboot
 ```
 
-### Android adb/fastboot
+### Latex environment
 ```
 sudo apt-get install texlive-full
 ```
@@ -104,8 +105,6 @@ Optionnaly, edit the ```.zshrc``` file and change the theme.
 ```
 sudo apt-get install tree
 ```
-
-# Ubuntu Gnome edition post-install
 
 ## Eye-candy
 ```sh
@@ -204,13 +203,18 @@ sudo iptables-restore <iptables.rules
 
 # check
 sudo iptables -L
+
+# install iptables-persistent package to load rules at boot
+sudo apt-get install iptables-persistent
 ```
+
+
 
 ## Opera
 
 # Configure ```kvm``` for type 1 virtualization
 
-* check whetehr CPU supports virtualization:
+* check wheter CPU supports virtualization:
 ```sh
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 ```

@@ -1,0 +1,35 @@
+*filter
+
+# set default DROP policy
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+
+# accept any related or established connection
+-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# allow all traffic on the loopback interface
+-A INPUT -i lo -j ACCEPT
+-A OUTPUT -o lo -j ACCEPT
+
+# allow outbound DHCP requests
+-A OUTPUT -p udp --dport 67:68 --sport 67:68 -j ACCEPT
+
+# allow outbound DNS lookups
+-A OUTPUT -p udp -m udp --dport 53 -j ACCEPT
+
+# allow outbound ping requests
+-A OUTPUT -p icmp -j ACCEPT
+
+# allow outbound NTP requests
+-A OUTPUT -p udp --dport 123 --sport 123 -j ACCEPT
+
+# allow outbound http/https requests
+-A OUTPUT -p tcp -m tcp --dport 80 -m state --state NEW -j ACCEPT
+-A OUTPUT -p tcp -m tcp --dport 443 -m state --state NEW -j ACCEPT
+
+# commit changes
+COMMIT
+
+# let a blank line after COMMIT

@@ -25,6 +25,7 @@ sudo apt-get install dos2unix
 ```
 sudo apt-get install build-essential
 sudo apt-get install hexedit
+sudo apt install hexyl
 ```
 
 ### Install and configure ```vim```
